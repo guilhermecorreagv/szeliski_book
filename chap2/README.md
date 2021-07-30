@@ -10,7 +10,10 @@ I also left the item 3 blank since I did not find any concise and beautiful inte
 
 Upon launching the code, you will find an empty canvas like this:
 
-<div style="text-align:center"><img src="images/q2-2a.png" alt="Canvas at the beginning." width="600"/></div>
+<p align="center">
+<img src="images/q2-2a.png" width="50%">
+</p>
+
 
 The controls goes as follows:
 * Click on the rectangle to add a new rectangle.
@@ -21,7 +24,9 @@ The controls goes as follows:
 
 One example of usage can be seen bellow.
 
-<div style="text-align:center"><img src="images/q2-2b.png" alt="Example of the projective transform buttons." width="600"/></div>
+<p align="center">
+<img src="images/q2-2b.png" width="50%">
+</p>
 
 Note that, the rectangles are transformed by transforming their vertices and linking them again, since doing a naive for loop at each pixel would be extremely slow.
 
@@ -29,7 +34,9 @@ The save button was not used for saving, instead I tried to do something differe
 
 One example from such usage can be seen here:
 
-<div style="text-align:center"><img src="images/q2-2c.png" alt="Example of substituting a rectangle with an image." width="600"/></div>
+<p align="center">
+<img src="images/q2-2c.png" width="50%">
+</p>
 
 Some comments about this question:
 
