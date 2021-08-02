@@ -417,9 +417,7 @@ def interface(event, x, y, flags, param):
                         if np.linalg.norm(click_pos - np.array([x, y])
                                           ) < selection_threshold:
                             if state == 'save':
-                                my_img = cv2.imread(
-                                    '/home/guilherme/Desktop/Guilherme/perfil.jpg'
-                                )
+                                my_img = cv2.imread(my_img_path)
                                 new_shape = np.array(
                                     list_squares[i].pts[2]) - np.array(
                                         list_squares[i].pts[0])
@@ -443,6 +441,7 @@ if __name__ == '__main__':
     bar_height = 100  # Height of the menu bar
     selection_threshold = 15  # Distance in pixels to select a point
 
+    my_img_path = './images/lena.jpeg'
     next_color = tuple(np.random.randint(0, 256, 3, dtype='uint8').tolist())
     state = 'idle'
     list_squares = []
@@ -459,4 +458,6 @@ if __name__ == '__main__':
         k = cv2.waitKey(1) & 0xFF
         if k == 27:
             break
+        elif k == ord('s'):
+            cv2.imwrite('./saved.png', display_img)
     cv2.destroyAllWindows()
