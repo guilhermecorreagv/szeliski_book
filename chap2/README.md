@@ -53,3 +53,17 @@ The image generation was not feasible for real time interaction, it would take 1
 <p align="center">
 <img src="images/infinite_checkerboard.gif" width="65%">
 </p>
+
+## Question 2-4: Focus distance and depth of field
+
+The code for the plots is inside question2-4.py, and the formula deduction is in question2-4.md. For the first item we obtain the following progression of the focus distances:
+
+<p align="center">
+<img src="images/q2-4a.png" width="40%">
+</p>
+
+For the second item, we find the formula for the Depth of Field, and use it to compute the plot for the third item, which gives the DOF as we zoom in.
+
+<p align="center">
+<img src="images/dof.png" width="40%">
+</p>
