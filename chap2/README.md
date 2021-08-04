@@ -67,3 +67,25 @@ For the second item, we find the formula for the Depth of Field, and use it to c
 <p align="center">
 <img src="images/dof.png" width="40%">
 </p>
+
+## Question 2-8: Skin color detection
+
+For this question I decided to work on HSV color space, since there I could probably find a better way to threshold the image for the skin color. In order to find the good values to threshold, I first took a look at each channel for a single frame:
+
+<p align="center">
+<img src="images/q2-8a.png" width="80%">
+</p>
+
+We can clearly see that the value channel won't help us much, so we make a 2D scatterplot using the Hue and Saturation values.
+
+<p align="center">
+<img src="images/q2-8b.png" width="60%">
+</p>
+
+Now we can see that the values corresponding to my skin tone are located in low and high Hue values, and small saturation values. By applying a chosen threshold and doing some morphological operations on the mask in order to reduce noise, and we obtain:
+
+<p align="center">
+<img src="images/q2-8c.png" width="60%">
+</p>
+
+Where I changed the "skin pixels" to green (0, 255, 0).
