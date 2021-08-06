@@ -68,6 +68,29 @@ For the second item, we find the formula for the Depth of Field, and use it to c
 <img src="images/dof.png" width="40%">
 </p>
 
+## Question 2-7: Gamma correction in image stitching
+
+In this question, I got an image from Google Images that represented a scene with different exposures, the image I got was this one:
+
+<p align="center">
+<img src="images/exposure2.jpg" width="60%">
+</p>
+
+I then tried to correct it by linearly adjusting the values, since one would guess that the camera receiving brightness changes linearly with the exposure. I just didn't know if I should do that after doing the gamma correction or not. I tried firstly without the gamma correction and I obtained the following:
+
+<p align="center">
+<img src="images/saved_exposure_b.png" width="60%">
+</p>
+
+Which managed to stich the first two parts, but not the last one. I then again tried with the gamma correction:
+
+<p align="center">
+<img src="images/saved_exposure_a.png" width="60%">
+</p>
+
+And again the same problem! I conjectured that there was another modification in the last image, such that simply linearly trying to adjust won't make it. Note that the numbers in each image is the factor by which the values were multiplied.
+
+
 ## Question 2-8: Skin color detection
 
 For this question I decided to work on HSV color space, since there I could probably find a better way to threshold the image for the skin color. In order to find the good values to threshold, I first took a look at each channel for a single frame:
