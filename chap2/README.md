@@ -2,7 +2,7 @@
 
 ## Question 2-1: Least squares intersection point and line fitting — advanced
 
-For this question I made the equations using latex, which is displayed correctly in VS Code, but unfortunately does not display in github. I will try to correct this behavior in the future.
+For this question I made a pdf using LaTeX, since I did not find a good way to display equations in github.
 
 I also left the item 3 blank since I did not find any concise and beautiful interpretation, despite the geometric intuition.
 
@@ -56,7 +56,7 @@ The image generation was not feasible for real time interaction, it would take 1
 
 ## Question 2-4: Focus distance and depth of field
 
-The code for the plots is inside question2-4.py, and the formula deduction is in question2-4.md. For the first item we obtain the following progression of the focus distances:
+The code for the plots is inside question2-4.py, and the formula deduction is in question2-4.pdf. For the first item we obtain the following progression of the focus distances:
 
 <p align="center">
 <img src="images/q2-4a.png" width="40%">
