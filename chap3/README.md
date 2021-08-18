@@ -20,3 +20,35 @@ I analysed 10 frames to extract the mean and the standard deviation from the bac
 <p align="center">
 <img src="images/q3-5.png" width="60%">
 </p>
+
+## Question 3-7: Histogram Equalization
+
+For this question I converted the image do the YCrCb domain, since it's made for digital images, I equalize the Y channel (luminance) and I made the "punch" the author suggested, clipping the 5% lower/higher pixels to 0/255. I did not code the implementation of the algorithm, but rather used OpenCV function.
+
+The test image before and after normalization, and their corresponding histograms are:
+
+<p align="center">
+<img src="images/q3-7.png" width="60%">
+</p>
+
+<p align="center">
+<img src="images/q3-7b.png" width="60%">
+</p>
+
+## Question 3-9: Padding for neighborhood operations
+
+In this question I implemented "zero", "constant", "clamp" and "mirror" paddings. All of those applied can be seen in the image below:
+
+<p align="center">
+<img src="images/q3-9.png" width="50%">
+</p>
+
+## Question 3-10: Separable filters
+
+I implemented the separable convolution, and added an option to approximate any kernel within some orders of magnitude from the SVD. For the record I made a test using the separable convolution and normal convolution in a kernel of size 121 x 121. The time for separable was 6.13s and the time for normal convolution was 12.21s. Remember that this is a Python unoptimized code. 
+
+Picture of a test using Sobel Filters:
+
+<p align="center">
+<img src="images/q3-10.png" width="70%">
+</p>
